@@ -30,7 +30,7 @@ add(aFloatNumber, anotherFloatNumber);
 // 4. Make an object (in ruby this would be a hash) with four keys, and have the keys be three different data types.
 // 5. Access two of the values in your object, and log them to the screen.
 
-const objOne = { one : "One", two : 2, three : true };
+const objOne = { one : "One", two : 2, three : true, four : null };
 
 console.log(objOne.one, objOne.three);
 
@@ -51,6 +51,24 @@ objectTwoPrinter(objTwo);
 // 9. Make four more objects with the same keys.
 // 10. Access a value from three of these objects.
 
+const animalTemplate = new Object({ dog : "Canis", cat : "Felidae", weasel : "Mustelids" });
+
+
+// animalTemplate.dog = ;
+// animalTemplate.cat = ;
+// animalTemplate.weasel = ;
+
+const animalSounds ={}
+{
+    dog : "Woof!",
+    cat : "Meow",
+    weasel : "Faf faf faf"
+}
+// const animalSize = new animalTemplate("Very small to medium", "Small", "Small");
+
+// console.log(animalTemplate.weasel);
+// console.log(animalFamily.cat);
+// console.log(animalSize.dog);
 
 
 // ============================================
