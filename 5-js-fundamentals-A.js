@@ -22,6 +22,19 @@ console.log(result);
 // Now write a second function called moreArrayMultiply that takes three arguments: a number, an array, and a function: (eg. num, arr, funct). Have this function return the result of number and array when called as arguments to arrayMultiplyAgain which you passed in as an argument.
 // Define a variable and in it store the result of the second function when called with 2, [1, 2, 3], and the first function you created. When you console.log this variable to screen it should produce [ 2, 4, 6 ].
 
+function arrayMultiplyAgain(factor, arr2) {
+	return arr2.map((value) => {
+		return value * factor;
+  });
+};
+
+function moreArrayMultiply(num1, arr2, funct) {
+  return funct(num1, arr2);
+}
+
+let result2 = moreArrayMultiply(2, [1, 2, 3], arrayMultiplyAgain());
+console.log(result2);
+
 // Problem 3
 // Implement your own version of .forEach
 // Define a function that takes a callback and provides the same functionality as the .forEach function inbuilt into es6. You can do this as a function that extends the array prototype (which takes a callback function as an argument), or more simply as a function that takes an array as an argument, as well as a callback function.
